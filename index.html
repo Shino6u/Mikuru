@@ -1,16 +1,87 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Shino6u test</title>
-    <link rel="stylesheet" href="styling.css">
-  </head>
-  <body>
-    <h1>Expert level test</h1>
-    <p>You are looking at this page right now this means this worked and I'm smart</p>
-    <p>You are looking at this page right now this means this worked and I'm smart</p>
-    <p>You are looking at this page right now this means this worked and I'm smart</p>
-    <p>You are looking at this page right now this means this worked and I'm smart</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      overflow: hidden;
+      background: linear-gradient(45deg, #ffcc00 25%, transparent 25%, transparent 75%, #ffcc00 75%, #ffcc00), linear-gradient(-45deg, #ffcc00 25%, transparent 25%, transparent 75%, #ffcc00 75%, #ffcc00);
+      background-size: 50px 50px;
+      animation: scrollDiagonal 5s linear infinite;
+    }
+
+    @keyframes scrollDiagonal {
+      0% {
+        background-position: 0 0;
+      }
+      100% {
+        background-position: 50px 50px;
+      }
+    }
+
+    header {
+      background: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      display: flex;
+    }
+
+    aside {
+      width: 200px;
+      background: #555;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    section {
+      flex-grow: 1;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    nav {
+      display: flex;
+      flex-direction: column;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Your Website</h1>
+  </header>
+  <main>
+    <aside>
+      <nav>
+        <a href="#">Option 1</a>
+        <a href="#">Option 2</a>
+        <a href="#">Option 3</a>
+        <!-- Add more options as needed -->
+      </nav>
+    </aside>
+    <section>
+      <!-- Main content of your website goes here -->
+    </section>
+  </main>
+</body>
 </html>
