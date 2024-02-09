@@ -1,1 +1,33 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
 
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 200%; /* Adjust this value based on the number of background images */
+  background: url('your-background-image.jpg'); /* Add your background image */
+  animation: scrollBackground 20s linear infinite; /* Adjust the duration based on your preference */
+}
+
+@keyframes scrollBackground {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Adjust this value based on the number of background images */
+  }
+}
