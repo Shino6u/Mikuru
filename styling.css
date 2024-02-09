@@ -1,13 +1,29 @@
-body {
-    height: 100%;
-    width: 100%;
-    background: conic-gradient(
-        #e9ce82 90deg,
-        #c87d22 90deg 180deg,
-        #e9ce82 180deg 270deg,
-        #c87d22 270deg
-    );
-    background-repeat: repeat ;
-    background-size: 60px 60px;
-    background-position: top left;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diagonal Checkerboard Background</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: linear-gradient(45deg, yellow 25%, transparent 25%, transparent 75%, yellow 75%, yellow), linear-gradient(-45deg, yellow 25%, transparent 25%, transparent 75%, yellow 75%, yellow);
+      background-size: 50px 50px;
+      animation: scrollDiagonal 5s linear infinite;
+    }
+
+    @keyframes scrollDiagonal {
+      0% {
+        background-position: 0 0;
+      }
+      100% {
+        background-position: 50px 50px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Your website content goes here -->
+</body>
+</html>
